@@ -1,10 +1,25 @@
 <html>
- <head>
-  <title>neshsolutions</title>
- </head>
- <body>
- 
-  Hi Maggie
-  
- </body>
+<head>
+ <title>neshsolutions</title>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+
+<p>Hi <span id="container1" data-delimiter="|" data-delay="1200">Siva</span>!</p>
+
+
+<script type="text/javascript" src="dynamo.js/dynamo.js"></script>
+
+
+<script type="text/javascript">
+ //containter 1 for name change
+ $('#container1').dynamo({
+  speed: 50,
+  delay: 500,
+  lines: ["Nesh", "NeshSolutions"]
+ });
+</script>
+
+
+</body>
 </html>
