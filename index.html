@@ -12,6 +12,7 @@
 	<meta name="keywords" content=""/>
 	<!--[if lte IE 8]>
 	<script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/init.js"></script>
 	<noscript>
@@ -26,6 +27,7 @@
 	<link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
 </head>
 <body class="loading">
+<script type="text/javascript" src="js/dynamo.js"></script>
 <div id="wrapper">
 	<div id="bg"></div>
 	<div id="overlay"></div>
@@ -33,9 +35,11 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1>Adam Jensen</h1>
+			<h1>Sivaneshwaran Loganathan</h1>
 
-			<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+			<p><span id="container1" data-delimiter="|" data-delay="1200">Electrical Engineer</span> &nbsp;&bull;&nbsp;
+				<span id="container2" data-delimiter="|" data-delay="1200">Electrical Engineer</span> &nbsp;&bull;&nbsp;
+				<span id="container3" data-delimiter="|" data-delay="1200">Electrical Engineer</span></p>
 			<nav>
 				<ul>
 					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -49,10 +53,39 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+			<span class="copyright">&copy; NeshSolutions. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 		</footer>
 
 	</div>
 </div>
+
+<script type="text/javascript">
+	//containter 1 for rotating name
+	$('#container1').dynamo({
+		speed: 100,
+		delay: 800,
+		lines: ["Computer Science"]
+	});
+</script>
+
+<script type="text/javascript">
+	//containter 2 for rotating name
+	$('#container2').dynamo({
+		speed: 100,
+		delay: 800,
+		lines: ["Computer Science"]
+	});
+</script>
+
+<script type="text/javascript">
+	//containter 3 for rotating name
+	$('#container3').dynamo({
+		speed: 100,
+		delay: 800,
+		lines: ["Computer Science"]
+	});
+</script>
+
+
 </body>
 </html>
