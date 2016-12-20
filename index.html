@@ -1,98 +1,26 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
 <head>
-    <title>NeshSolutions</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <!--[if lte IE 8]>
-    <script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/init.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="css/skel.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/style-wide.css"/>
-        <link rel="stylesheet" href="css/style-noscript.css"/>
-    </noscript>
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
+    <meta charset="UTF-8">
+    <title>neshsolutions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/app.js"></script>
+    <script src="js/controllers/home.js"></script>
 </head>
-<body class="loading">
-<script type="text/javascript" src="js/dynamo.js"></script>
-<div id="wrapper">
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    <div id="main">
-
-        <!-- Header -->
-        <header id="header">
-            <!-- Nav -->
-        <!--    <nav id="nav">
-                <ul>
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#one">What I Do</a></li>
-                    <li><a href="#two">Who I Am</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> -->
-            <h1>Sivaneshwaran Loganathan</h1>
+<body ng-controller="mainController">
 
 
-            <p>Innovator &nbsp;&bull;&nbsp;
-                <span id="emptycontainer" data-delimiter="|" data-delay="1200">Robotics</span> &nbsp;&bull;&nbsp;
-                <span id="container2" data-delimiter="|" data-delay="1200">Electrical Engineer</span> &nbsp;&bull;&nbsp;
-                Gamer &nbsp;&bull;&nbsp;
-                Food Addict
-            </p>
-            <nav>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/nesh170" class="icon fa-linkedin"><span class="label">Twitter</span></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/nesh170" class="icon fa-facebook"><span
-                            class="label">Facebook</span></a></li>
-                    <li><a href="https://github.com/nesh170" class="icon fa-github"><span
-                            class="label">Github</span></a></li>
-                    <li><a href="mailto:sl290@duke.edu" class="icon fa-envelope-o"><span class="label">Email</span></a>
-                    </li>
-                    <li><a href="resources/Resume-Sivaneshwaran.pdf" class="icon fa-file-pdf-o"><span class="label">Email</span></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <span class="copyright">&copy; NeshSolutions. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-        </footer>
-
-    </div>
-</div>
-
-<script type="text/javascript">
-    //containter 1 for empty dynamo container
-    $('#emptycontainer').dynamo({
-    });
-</script>
-
-<script type="text/javascript">
-    //containter 2 for rotating name
-    $('#container2').dynamo({
-        speed: 100,
-        delay: 800,
-        lines: ["Computer Science"]
-    });
-</script>
-
+<div ng-view><!--This is based on the route--></div>
 
 </body>
 </html>
