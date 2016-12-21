@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute','ngAnimate','ngSanitize','ui.bootstrap']);
+var app = angular.module('app', ['ngRoute','ngAnimate','ngSanitize','ui.bootstrap','ngTouch']);
 
 app.config(function($routeProvider){
     $routeProvider
@@ -25,5 +25,11 @@ app.config(function($routeProvider){
 });
 
 app.controller('mainController', function($rootScope,$scope,$log){
-    $log.log("controller initialized")
+    $log.log(document.getElementById('wrapper').className);
+    $scope.toggled = false;
+
+    $scope.toggleFn = function(toggle){
+        $scope.toggled = toggle;
+    };
+
 });
