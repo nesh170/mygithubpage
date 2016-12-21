@@ -6,8 +6,20 @@ app.config(function($routeProvider){
             templateUrl:'views/home.html',
             controller:'homeController'
         })
+        .when('/profile',{
+        templateUrl:'views/profile.html',
+        controller:'profileController'
+        })
+        .when('/project',{
+            templateUrl:'views/project.html',
+            controller:'projectController'
+        })
+        .when('/fun',{
+            templateUrl:'views/fun.html',
+            controller:'funController'
+        })
         .otherwise({
-            templateUrl:'views/home.html',
+            templateUrl:'views/hobbies.html',
             controller:'homeController'
         })
 });

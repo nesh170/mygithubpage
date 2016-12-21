@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html ng-app="app" lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <title>neshsolutions</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
@@ -14,13 +16,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/simple-sidebar.css">
     <script src="js/app.js"></script>
     <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/fun.js"></script>
+    <script src="js/controllers/profile.js"></script>
+    <script src="js/controllers/project.js"></script>
 </head>
 <body ng-controller="mainController">
 
+<div id="wrapper">
 
-<div ng-view><!--This is based on the route--></div>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#/profile">
+                    Siva Loganathan
+                </a>
+            </li>
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/project">Projects</a></li>
+            <li><a href="#/fun">Fun</a></li>
+            <li><a href="resources/resume_siva_loganathan.pdf">Résumé</a></li>
+            <li><a href="http://www.github.com/nesh170">Github</a></li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12" ng-view>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+<footer style="color: white">Stay lit</footer>
 
 </body>
 </html>
