@@ -1,0 +1,9 @@
+.profile-image-div {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-image-div img {
+    border-radius: 50%;
+}
