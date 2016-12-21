@@ -8,13 +8,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <link rel="stylesheet" href="styles/simple-sidebar.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="js/app.js"></script>
@@ -23,7 +26,7 @@
     <script src="js/controllers/profile.js"></script>
     <script src="js/controllers/project.js"></script>
 </head>
-<body ng-controller="mainController" ng-swipe-left="toggleFn(false)" ng-swipe-right="toggleFn(true)">
+<body ng-controller="mainController" ng-swipe-left="toggleFn(false)" ng-swipe-right="toggleFn(true)"  ng-cloak>
 
 <div id="wrapper" ng-class="toggled ? 'toggled' : ''">
 
@@ -53,11 +56,10 @@
             </div>
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
 
 </div>
 
-<footer class="footer"><p>Powered by Goodberry's Ice Cream</p></footer>
+<footer class="footer"><p>Powered by Litness Engine</p></footer>
 
 </body>
 </html>

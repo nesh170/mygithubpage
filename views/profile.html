@@ -1,3 +1,39 @@
-<div>
-    <h1>Siva's Profile here</h1>
+<link rel="stylesheet" href="styles/profile.css">
+<div class="page-header">
+    <h1>Sivaneshwaran (Siva) Loganathan <small>Who am I?</small></h1>
 </div>
+
+<div class="profile-image-div">
+    <img height="30%" ng-src="{{profileImagePath}}" width="30%"/>
+</div>
+
+<md-content class="md-padding" layout-xs="column" layout="row" layout-align="center">
+    <div flex-xs flex-gt-xs="70" layout="column">
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Hi!</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    Hi, I am Sivaneshwaran Loganathan. My friends call me Siva and now you can call me Siva too. I am a senior at Duke University majoring in Electrical & Computer Engineering and Computer Science. I am graduating in May 2017 with a Bachelors in Engineering.
+                </p>
+                <p>
+                    I really enjoy all things electrical from software to hardware, from robotics to cars. I believe technology is the way into the future and I really like the future. I really enjoy tinkering with things, figuring out what makes things tick. I particularly enjoy computer architecture in terms of hardware. I have spent time building a simple processor and working in a team to build a simple ethernet switch.
+                </p>
+                <p>
+                    In terms of software, I love leveraging the variety of platforms, services and tools to build something new and amazing. The biggest thing I love about software is actually version control. I learnt about version control about Spring 2015 and I've not gone back since. Almost all my projects are on Github so be sure to check it out.
+                </p>
+                <p>
+                    I also really enjoy food, all kinds of food especially spicy food is the true bae.
+                </p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ng-click="changePicture(0)">Lit</md-button>
+                <md-button ng-click="changePicture(1)">CandleLit</md-button>
+                <md-button ng-click="changePicture(2)">Over Lit 9000</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</md-content>
