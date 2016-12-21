@@ -3,12 +3,8 @@ var app = angular.module('app', ['ngRoute','ngAnimate','ngSanitize','ui.bootstra
 app.config(function($routeProvider){
     $routeProvider
         .when('/',{
-            templateUrl:'views/home.html',
-            controller:'homeController'
-        })
-        .when('/profile',{
-        templateUrl:'views/profile.html',
-        controller:'profileController'
+            templateUrl:'views/profile.html',
+            controller:'profileController'
         })
         .when('/project',{
             templateUrl:'views/project.html',
@@ -19,8 +15,8 @@ app.config(function($routeProvider){
             controller:'funController'
         })
         .otherwise({
-            templateUrl:'views/hobbies.html',
-            controller:'homeController'
+            templateUrl:'views/profile.html',
+            controller:'profileController'
         })
 });
 
