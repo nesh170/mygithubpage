@@ -4,7 +4,7 @@
 </div>
 
 <div class="profile-image-div">
-    <img height="30%" ng-src="{{profileImagePath}}" width="30%"/>
+    <img height="30%" ng-src="https://s3-us-west-2.amazonaws.com/neshsolutionswebpage/profile_picture_{{currentProfilePicture.toString()}}.jpg" width="30%"/>
 </div>
 
 <md-content class="md-padding" layout-xs="column" layout="row" layout-align="center">
@@ -30,9 +30,7 @@
                 </p>
             </md-card-content>
             <md-card-actions layout="row" layout-align="end center">
-                <md-button ng-click="changePicture(0)">Lit</md-button>
-                <md-button ng-click="changePicture(1)">CandleLit</md-button>
-                <md-button ng-click="changePicture(2)">Over Lit 9000</md-button>
+                <md-button ng-click="changePicture()">Lit</md-button>
             </md-card-actions>
         </md-card>
     </div>
