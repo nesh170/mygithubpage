@@ -6,9 +6,9 @@
 <md-content>
     <md-tabs md-selected="selectedIndex" md-border-bottom md-dynamic-height md-autoselect>
         <md-tab label="{{project.title}}" ng-repeat="project in tabs">
-            <div style="height: 340px; width: 100%">
-                <div style="height: 100%; width: 100%">
-                    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" style="height: 100%; width: 100%">
+            <div style="width: 100%; text-align: center">
+            <div style="height: 317px; width: 50%;">
+                    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" style="height: 100%; width: 100%; margin: auto">
                         <div uib-slide ng-repeat="slide in currentProjectSource track by slide.id" index="slide.id">
                             <img ng-src="{{slide.source}}" style="margin:auto; width: 100%; height: 100%">
                             <iframe ng-src="{{slide.source}}" ng-if="slide.type=='video'"></iframe>
@@ -16,7 +16,7 @@
                             <!--</div>-->
                         </div>
                     </div>
-                </div>
+            </div>
             </div>
             <md-content class="md-padding">
                 <h1 class="md-display-2" ng-bind="project.title"></h1>
