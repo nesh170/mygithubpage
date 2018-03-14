@@ -14,6 +14,10 @@ app.config(function($routeProvider){
             templateUrl:'views/fun.html',
             controller:'funController'
         })
+        .when('/birthday',{
+            templateUrl:'views/birthday.html',
+            controller:'birthdayController'
+        })
         .otherwise({
             templateUrl:'views/profile.html',
             controller:'profileController'
